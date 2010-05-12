@@ -1,0 +1,35 @@
+
+
+<%= render :partial => @convo %>
+
+<h2>Blips</h2>
+<div id="blips">
+	<%= render :partial => @convo.blips %>
+</div>
+
+<% form_for Blip.new(:convo =>  @convo), :remote => true do |f| %>
+	<p>
+		
+		<p></p><b>Add new blip</b></p>
+		
+		
+		<%= f.hidden_field :convo_id %>
+		<%= f.label :title, "Titulo" %>
+		<%= f.text_field :title %><br />
+				
+		<%= f.label  :character, "Personaje" %>
+		<%= f.text_field :character %><br />
+		
+		<%= f.label :episode, "Episodio" %>
+		<%= f.text_field  :episode %><br />
+		
+		<%= f.label :type, "TipoCG" %>
+		<%= f.text_field :type %><br />
+		
+		<%= f.label :tk, "Takes" %>
+		<%= f.text_field :tk  %><br />
+
+	</p>
+	<p><%= f.submit "Add Blip" %></p>
+<% end %>
+

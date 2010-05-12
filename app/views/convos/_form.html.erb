@@ -1,0 +1,28 @@
+<%= form_for(@convo) do |f| %>
+  <% if @convo.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@convo.errors.count, "error") %> prohibited this convo from being saved:</h2>
+    <ul>
+    <% @convo.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :data %><br />
+    <%= f.date_select :data %>
+  </div>
+  <div class="field">
+    <%= f.label :studio %><br />
+    <%= f.text_field :studio %>
+  </div>
+  <div class="field">
+    <%= f.label :factinfo %><br />
+    <%= f.text_field :factinfo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

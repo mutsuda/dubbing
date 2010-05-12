@@ -1,0 +1,13 @@
+<% div_for blip do %>
+<p>
+ <strong>Titulo: </strong> <%= blip.title %>
+ <strong>Personaje: </strong> <%= blip.character %>
+ <strong>Episodio: </strong> <%= blip.episode %>
+ <strong>CG: </strong> <%= blip.type %>
+ <strong>Takes: </strong> <%= blip.tk %>
+</p>
+
+<% end %>
+
+<%= link_to 'Edit', edit_blip_path(blip) %> |
+<%= link_to 'Back', blips_path %>

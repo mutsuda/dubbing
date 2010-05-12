@@ -1,0 +1,13 @@
+<% div_for convo do %>
+	  <%= convo.data %>
+	  
+	 <b> <%=convo.studio %> </b>
+	  Facturar a:
+  	  <%= convo.factinfo %>
+<% end %>
+
+
+<%= link_to 'Edita', edit_convo_path(convo) %> |
+<%= link_to 'Elimina', convo, :method => :delete, :confirm => "Segur?" %> |
+<%= link_to 'Veure totes', convos_path %>
+<p></p>

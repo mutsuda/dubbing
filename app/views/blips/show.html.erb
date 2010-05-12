@@ -1,0 +1,35 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>Convo:</b>
+  <%= @blip.convo_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @blip.title %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @blip.type %>
+</p>
+
+<p>
+  <b>Character:</b>
+  <%= @blip.character %>
+</p>
+
+<p>
+  <b>Episode:</b>
+  <%= @blip.episode %>
+</p>
+
+<p>
+  <b>Tk:</b>
+  <%= @blip.tk %>
+</p>
+
+
+<%= link_to 'Edit', edit_blip_path(@blip) %> |
+<%= link_to 'Back', blips_path %>

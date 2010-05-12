@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  convo_id: 1
+  title: MyString
+  type: MyString
+  character: MyString
+  episode: MyString
+  tk: 1
+
+two:
+  convo_id: 1
+  title: MyString
+  type: MyString
+  character: MyString
+  episode: MyString
+  tk: 1
