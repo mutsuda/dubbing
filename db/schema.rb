@@ -9,12 +9,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100512142950) do
+ActiveRecord::Schema.define(:version => 20100512192701) do
 
   create_table "blips", :force => true do |t|
     t.integer  "convo_id"
     t.string   "title"
-    t.string   "type"
+    t.string   "tipus"
     t.string   "character"
     t.string   "episode"
     t.integer  "tk"
@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(:version => 20100512142950) do
   end
 
   create_table "convos", :force => true do |t|
-    t.integer  "convo_id"
     t.date     "data"
     t.string   "studio"
     t.string   "factinfo"

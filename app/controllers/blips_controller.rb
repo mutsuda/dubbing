@@ -43,8 +43,12 @@ class BlipsController < ApplicationController
   
   def create
     @blip = Blip.create!(params[:blip])
-    redirect_to convo_path(@blip.convo)
-    
+    flash[:notice] = "Blip added!"
+   # redirect_to convo_path(@blip.convo)
+   respond_to do |format|
+   		format.html { redirect_to @blip.convo}
+   		format.js
+   	end
   end
 
   

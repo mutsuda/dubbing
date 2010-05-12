@@ -3,7 +3,7 @@ class CreateBlips < ActiveRecord::Migration
     create_table :blips do |t|
       t.integer :convo_id
       t.string :title
-      t.string :type
+      t.string :tipus
       t.string :character
       t.string :episode
       t.integer :tk
